@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pacman</title>
+    <link
+            href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"
+            rel="stylesheet"
+            id="bootstrap-css"
+    />
+    <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.3.min.js"
+    ></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+    <script src="https://rawgit.com/mervick/emojionearea/master/dist/emojionearea.js">
+    </script>
+    <link rel="stylesheet" href="https://rawgit.com/mervick/emojionearea/master/dist/emojionearea.css" />
+
+    <link rel="stylesheet" href="css/chatroom.css" />
+    <link
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+            rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+    <script src="js/view-christmas.js"></script>
+</head>
+<body>
+<div style="position:relative;">
+    <div class="header">
+        <a class="logo">Good Team</a>
+        <div class="header-right" style="display:flex; cursor: pointer; padding-right: 5rem">
+            <!-- create a room -->
+            <div style="display: flex">
+<!--                <a data-toggle="modal" data-target="#modal_create">-->
+                    <img src="heart.png" width="25" height="25" alt="plus icon"/>
+<!--                </a>-->
+<!--                <a data-toggle="modal" data-target="#modal_create">-->
+                    <img src="heart.png" width="25" height="25" alt="plus icon"/>
+<!--                </a>-->
+<!--                <a id="plus-btn" data-toggle="modal" data-target="#modal_create">-->
+                    <img src="heart.png" width="25" height="25" alt="plus icon"/>
+<!--                </a>-->
+            </div>
+            <div style="padding-left: 2rem; color: white; padding-right: 2rem; font-size: 2rem; font-weight: 900">
+                Score: 300
+            </div>
+            <div style="padding-left: 2rem; color: white; padding-right: 2rem; font-size: 2rem; font-weight: 900">
+                Level: 1
+            </div>
+        </div>
+    </div>
+    <div style="position: relative; justify-content: center; display: flex">
+        <canvas id="game-board" width="1280" height="680" style="border: 1px solid #000000"></canvas>
+    </div>
+    <div style="display: none">
+        <img id="whiteGhost" src="white.png">
+        <img id="greenGhost" src="green.png">
+        <img id="pinkGhost" src="pink.png">
+        <img id="redGhost" src="red-1.png">
+        <img id="pcman" src="pcman.png">
+        <img id="pcman-hat" src="pcman-hat.png">
+        <img id="fruit" src="fruitItem.png">
+        <img id="sock" src="sock.png">
+        <img id="bell" src="bell.png">
+        <img id="star" src="star.png">
+        <img id="whiteGhost-hat" src="white-hat.png">
+        <img id="greenGhost-hat" src="green-hat.png">
+        <img id="redGhost-hat" src="red-hat.png">
+        <img id="pinkGhost-hat" src="pink-hat.png">
+        <img id="bone" src="bone.png">
+    </div>
+    <br>
+    <button class="button">Start</button>
+</div>
+</body>
+
+
+</html>
+
