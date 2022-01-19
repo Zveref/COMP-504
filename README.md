@@ -1,4 +1,4 @@
 # COMP-504
-Rice COMP 504 OOD
+Rice COMP 504 Object Oriented Programming & Design
 
-all homeworks & projects included
+All homeworks & projects included
