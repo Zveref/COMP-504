@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW4: Collision World</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/view.js"></script>
+
+</head>
+
+<body>
+
+
+
+<div style="position:fixed; top:3em; left:3em; border-style: solid; border-width: 3px; border-color: black">
+
+    <table>
+        <thred>
+            <tr>
+                <span  style="margin-right: 30px">Collisoin World:</span></th>
+            </tr>
+            <img src="fish.png" alt="Image missing" width = 20px>
+            <img src="fish.png" alt="Image missing" width = 20px>
+            <img src="fish.png" alt="Image missing" width = 20px>
+            <img src="fish.png" alt="Image missing" width = 20px>
+            <img src="fish.png" alt="Image missing" width = 20px>
+
+            <tr>
+                <th colspan="1"><select name="strategy" id="createStrategy" value="select" style="width:220px; text-align: center" required>
+                    <option value="default" style="text-align: center">--Select Strategy--</option>
+                    <option value="line" style="text-align: center"> Line </option>
+                    <option value="linger" style="text-align: center"> Linger </option>
+                    <option value="shaking" style="text-align: center"> Shaking </option>
+                    <option value="rotate" style="text-align: center"> Rotate </option>
+                    <option value="triangle" style="text-align: center"> Triangle </option>
+                    <option value="square" style="text-align: center"> Square </option>
+                    <option value="sin" style="text-align: center"> Sin-function </option>
+                    <option value="boundary" style="text-align: center"> Boundary </option>
+                    <option value="stair" style="text-align: center"> Stair </option>
+                    <option value="tornado" style="text-align: center"> Tornado </option></select>
+                </th>
+
+                <th colspan="1"><select name="character" id="createCharacter" value="select" style="width:220px; text-align: center" required>
+                    <option value="default" style="text-align: center">--Select InnerCollisionType--</option>
+                    <option value="random" style="text-align: center"> Random </option>
+                    <option value="normal" style="text-align: center"> Normal </option>
+                    <option value="slimmer" style="text-align: center"> Slimmer </option>
+                    <option value="fatter" style="text-align: center"> Fatter </option>
+                    <option value="vanish" style="text-align: center"> Vanish </option>
+                    <option value="hungry" style="text-align: center"> Hungry </option>
+                    <option value="faster" style="text-align: center"> Faster </option>
+                    <option value="slower" style="text-align: center"> Slower </option>
+                    <option value="colorful" style="text-align: center"> Colorful </option>
+                    <option value="still" style="text-align: center"> Still </option>
+                    <option value="fusion" style="text-align: center"> Fusion </option></select>
+                </th>
+
+                <th colspan="1">
+                    <select name="type" id="createType" value="select" style="width:220px; text-align: center"  required>
+                        <option value="default" style="text-align: center">--Select type--</option>
+                        <option value="ball" style="text-align: center"> Ball </option>
+                        <option value="fish" style="text-align: center"> Fish </option></select>
+                </th>
+
+                <th colspan="1"> <label for="switchable" style="margin-left: 10px"> canSwitch </label>
+                    <input type="checkbox" id="switchable" name="checkbox"></th>
+
+                <th colspan="1"><button id ="btn-submitCreate" style="margin-left: 10px">Create</button><th>
+
+                <th rowspan="2" ><button  style="margin-left: 20px; height:40px" id ="btn-switch">SwitchStrategy</button><th>
+            </tr>
+
+
+
+
+
+            <tr>
+
+                <th colspan="1"><select name="strategy" id="removeStrategy" value="select" style="width:220px; text-align: center" required>
+                    <option value="default" style="text-align: center">--Select Strategy--</option>
+                    <option value="line" style="text-align: center"> Line </option>
+                    <option value="linger" style="text-align: center"> Linger </option>
+                    <option value="shaking" style="text-align: center"> Shaking </option>
+                    <option value="rotate" style="text-align: center"> Rotate </option>
+                    <option value="triangle" style="text-align: center"> Triangle </option>
+                    <option value="square" style="text-align: center"> Square </option>
+                    <option value="sin" style="text-align: center"> Sin-function </option>
+                    <option value="boundary" style="text-align: center"> Boundary </option>
+                    <option value="stair" style="text-align: center"> Stair </option>
+                    <option value="tornado" style="text-align: center"> Tornado </option></select>
+                </th>
+
+                <th colspan="1"> ↑↑↑Only Ball Need This↑↑↑</th>
+
+                <th colspan="1"><select name="remove" id="removeType" value="select" style="width:220px; text-align: center"  required>
+                    <option value="default" style="text-align: center">--select type--</option>
+                    <option value="ball" style="text-align: center"> Ball </option>
+                    <option value="fish" style="text-align: center"> Fish </option></select>
+                </th>
+
+
+                <th colspan="1">
+                    <button id ="btn-submitRemove">Remove</button>
+                </th>
+
+                <th colspan="1"><button style="margin-left: 10px" id ="btn-clearAll">clearAll</button><th>
+
+
+            </tr>
+
+        </thred>
+    </table>
+
+
+
+    <canvas width="800" height="800" style="background: #D6F8FF; z-index: -1">
+
+    </canvas>
+
+
+</div>
+</body>
+</html>
+
