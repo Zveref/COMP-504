@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Shapes</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/view.js"></script>
+</head>
+
+<body>
+
+
+<div style="position:fixed; top:3em; left:3em; border-style: solid; border-width: 3px; border-color: black">
+
+<table>
+<thred>
+    <tr>
+        <th colspan="2"><span>Quick Simple Shapes:</span></th>
+        <th colspan="5" ><button id="btn-circle" style="margin-right:12px;">Circle</button>
+        <button id="btn-club" style="margin-right:12px;">Club</button>
+        <button id="btn-hexagon" style="margin-right:12px;">Hexagon</button>
+        <button id="btn-triangle" style="margin-right:12px;">Triangle</button>
+        <button id="btn-square" style="margin-right:12px;">Square</button></th>
+        <th rowspan="2"><button id="btn-clear" style="width:160px;height:40px; margin-left:50px;">clear</button></th>
+    </tr>
+    <tr>
+        <th colspan="2"><label for="shapes">Choose More Shapes:</label></th>
+        <th colspan="1"><select name="age" id="shapes" value="select" style="width:220px; text-align: center"  required>
+            <option value="default" style="text-align: center">--Select your shape--</option>
+            <option value="DoubleCircle" style="text-align: center"> DoubleCircle </option>
+            <option value="DoubleCLub" style="text-align: center"> DoubleCLub </option>
+            <option value="DoubleSquare" style="text-align: center"> DoubleSquare </option>
+            <option value="DoubleHexagon" style="text-align: center"> DoubleHexagon </option>
+            <option value="DoubleTriangle" style="text-align: center"> DoubleTriangle </option>
+            <option value="Circle+Club" style="text-align: center"> Circle+Club </option>
+            <option value="Circle+Hexagon" style="text-align: center"> Circle+Hexagon </option>
+            <option value="Circle+Square" style="text-align: center"> Circle+Square </option>
+            <option value="Circle+Triangle" style="text-align: center"> Circle+Triangle </option>
+            <option value="Triangle+Square" style="text-align: center"> Triangle+Square </option> </select></th>
+
+            <th colspan="1"><button id ="btn-submit">Create</button></th>
+    </tr>
+
+
+</thred>
+</table>
+
+
+
+    <canvas width="800" height="800" style="background: #D6F8FF; z-index: -1"></canvas>
+
+
+</div>
+</body>
+</html>
+
